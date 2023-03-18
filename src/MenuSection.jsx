@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Beer from "./Beer";
-import shaker from "../src/assets/shaker.png";
 import waveLine from "../src/assets/curve_line.svg";
 import Cocktail from "./Cocktail";
 import "./MenuSection.css";
@@ -60,7 +59,7 @@ function MenuSection() {
           </div>
           <div className="menu__col__2">
             <div className="menu__img__container">
-              <img src={shaker} alt="shaker" className="menu__img" />
+              <img src="https://res.cloudinary.com/cyher/image/upload/v1679118463/shaker_k8wzek.png" alt="shaker" className="menu__img" />
               {/* <img src={waveLine} alt="" className="menu__img__line" /> */}
             </div>
           </div>

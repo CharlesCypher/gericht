@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import "./GallerySection.css";
-import g from "../src/assets/chef.png";
 import MealsItem from "./MealsItem";
 
 function GallerySection() {

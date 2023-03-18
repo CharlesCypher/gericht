@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../src/assets/awards_logo.png";
-import awardHero from "../src/assets/award_hero.png";
 import award002 from "../src/assets/award_002.png";
 import award001 from "../src/assets/award_001.png";
 import award003 from "../src/assets/award_003.png";
@@ -70,7 +69,7 @@ function AwardSection() {
           </div>
           <div className="award__col__3">
             <div className="award__img__container">
-              <img src={awardHero} alt="food image of meat and peas" />
+              <img src="https://res.cloudinary.com/cyher/image/upload/v1679118448/award_hero_i2bc4n.png" alt="food image of meat and peas" />
             </div>
           </div>
         </div>

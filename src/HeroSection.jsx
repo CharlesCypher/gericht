@@ -1,6 +1,5 @@
 import React from "react";
 import "./HeroSection.css";
-// import heroImage from "../src/assets/hero.png";
 
 function HeroSection() {
   return (
@@ -31,7 +30,12 @@ function HeroSection() {
             </div>
             <div className="hero__col__3">
               <div className="hero__img__container">
-                <img src="https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png" alt="image a food" className="hero__image" />
+                <img
+                  src="https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png"
+                  alt="image a food"
+                  loading="lazy"
+                  className="hero__image"
+                />
               </div>
               <div className="hero__image__pagination">
                 <button className="page">01</button>

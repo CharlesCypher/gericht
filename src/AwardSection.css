@@ -1,7 +1,7 @@
 .award__section {
     position: relative;
     padding: 7rem 0;
-    background: var(--clr-black-900) url("../src/assets/texture_bg.png");
+    background: var(--clr-black-900) url("https://res.cloudinary.com/cyher/image/upload/v1679118225/texture_bg_jwvqca.png");
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 1;

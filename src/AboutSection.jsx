@@ -1,5 +1,4 @@
 import React from "react";
-import knife from "../src/assets/knife.png";
 import "./AboutSection.css";
 
 function About() {
@@ -18,7 +17,7 @@ function About() {
           </div>
           <div className="about__col__2">
             <div className="about__img__container">
-              <img src={knife} alt="" className="about__knife" />
+              <img src="https://res.cloudinary.com/cyher/image/upload/v1679118664/knife_kj6nuu.png" alt="image of a knife" className="about__knife" />
             </div>
           </div>
           <div className="about__col__3">

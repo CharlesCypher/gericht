@@ -1,5 +1,4 @@
 import React from "react";
-import chef from "../src/assets/chef.png";
 import quote from "../src/assets/quote.svg";
 import "./ChefSection.css";
 
@@ -11,7 +10,7 @@ function ChefSection() {
         <div className="chef__content">
           <div className="chef__col__1">
             <div className="chef__img__container">
-              <img src={chef} alt="chef" className="chef__img" />
+              <img src="https://res.cloudinary.com/cyher/image/upload/v1679117908/chef_puvrsq.png" alt="chef" className="chef__img" />
             </div>
           </div>
           <div className="chef__col__2">
