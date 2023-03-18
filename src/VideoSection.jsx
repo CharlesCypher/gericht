@@ -1,5 +1,4 @@
 import React, { useState, useRef } from "react";
-// import videoPoster from "../src/assets/videoPoster.png";
 import "./VideoSection.css";
 
 function VideoSection() {
@@ -16,7 +15,6 @@ function VideoSection() {
   };
 
   const vid001 = `https://player.vimeo.com/external/271611326.sd.mp4?s=3c5d20003a97a14d38832283944cc78da3d60082&profile_id=164&oauth2_token_id=57447761`;
-  const vid002 = `https://player.vimeo.com/external/376213205.sd.mp4?s=ee88744690535ad6c6598cfed6f940ef03fa3f49&profile_id=164&oauth2_token_id=57447761`;
   return (
     <section className="video__section">
       <div className="video__container">
