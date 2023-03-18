@@ -106,7 +106,7 @@
 
 @media (max-width: 30em) {
     .award__col__3 .award__img__container::before {
-        transform: translate(-15%, 40%);
+        transform: translate(-15%, 30%);
     }
 }
 
