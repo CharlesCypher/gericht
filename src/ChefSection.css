@@ -19,7 +19,7 @@
 .chef__col__1 .chef__img__container {
     position: relative;
     width: 100%;
-    max-width: calc(31.25rem - 20px);
+    max-width: calc(29rem - 50px);
     height: auto;
 }
 

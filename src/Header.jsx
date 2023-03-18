@@ -2,12 +2,16 @@ import React from "react";
 import "./Header.css";
 
 function Header() {
+  const toggleNavBar = () => {
+
+  };
+
   return (
     <div className="header__wrapper">
       <div className="padding__global">
         <header className="header__header">
           <h3 className="header__logo">Gerícht</h3>
-          <nav className="header__nav header__nav__left">
+          <nav className="header__nav header__nav__left" role={"navigation"}>
             <ul className="header__navLinks">
               <li className="header__link">
                 <a href="#">Home</a>
@@ -36,6 +40,11 @@ function Header() {
               </li>
             </ul>
           </nav>
+          <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>
+            <div className="bar bar__one"></div>
+            <div className="bar bar__one"></div>
+            <div className="bar bar__one"></div>
+          </button> 
         </header>
       </div>
     </div>

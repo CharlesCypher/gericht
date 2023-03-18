@@ -69,7 +69,11 @@ function AwardSection() {
           </div>
           <div className="award__col__3">
             <div className="award__img__container">
-              <img src="https://res.cloudinary.com/cyher/image/upload/v1679118448/award_hero_i2bc4n.png" alt="food image of meat and peas" />
+              <img
+                src="https://res.cloudinary.com/cyher/image/upload/v1679118448/award_hero_i2bc4n.png"
+                loading="lazy"
+                alt="food image of meat and peas"
+              />
             </div>
           </div>
         </div>

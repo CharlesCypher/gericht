@@ -38,6 +38,21 @@
     font-weight: var(--fw-700);
 }
 
+.hamburger {
+    background: none;
+    border: none;
+    outline-color: transparent;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 2px;
+    margin: 5px 0;
+    user-select: none;
+    background-color: var(--clr-white);
+}
+
 @media (max-width: 64rem) {
     .header__nav__right {
         display: none;

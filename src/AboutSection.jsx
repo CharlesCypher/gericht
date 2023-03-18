@@ -11,7 +11,7 @@ function About() {
             <h2 className="about__about__intro__text title">About Us</h2>
             <h4 className="about__about__intro__desc desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec
-              aliquet eu proin mauris et.
+              aliquet eu proin.
             </h4>
             <button className="about__about__intro__btn btn__primary">Know More</button>
           </div>

@@ -65,7 +65,8 @@
 }
 
 .hero__col__2 .hero__intro__desc {
-    width: min(100%, 450px);
+    width: min(95%, 450px);
+    padding-right: 4rem;
 }
 
 .hero__col__2 .hero__intro__btn:hover {
@@ -74,8 +75,7 @@
 
 .hero__col__3 .hero__img__container {
     position: relative;
-    width: 100%;
-    max-width: calc(31.25rem - 20px);
+    width: clamp(16.00rem, calc(11.13rem + 24.35vw), 30rem);
     height: auto;
 }
 
