@@ -99,12 +99,7 @@
     font-size: var(--fs-3rem);
 }
 
-@media (max-width: 64em) {
-    .gallery__gallery {
-        display: grid;
-        grid-auto-columns: calc(100% - 15vw);
-    }
-}
+
 
 @media (max-width:64em) {
     .gallery__content {
@@ -116,10 +111,27 @@
         margin-bottom: 4rem;
     }
 
+    .gallery__gallery {
+        display: grid;
+        grid-auto-columns: calc(65% - 31.72vw);
+    }
+
+}
+
+@media (max-width:48em) {
+    .gallery__gallery {
+        display: grid;
+        grid-auto-columns: calc(60% - 14.3vw);
+    }
 }
 
 @media (max-width:30em) {
     .gallery__img__container {
         height: 300px;
+    }
+
+    .gallery__gallery {
+        display: grid;
+        grid-auto-columns: calc(100% - 25vw);
     }
 }

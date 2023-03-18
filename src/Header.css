@@ -53,7 +53,7 @@
     background-color: var(--clr-white);
 }
 
-@media (min-width: 64em) {
+@media (min-width: 60em) {
     .hamburger {
         display: none;
     }

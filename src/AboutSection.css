@@ -85,6 +85,13 @@
     }
 
     .about__img__container .about__knife {
+        max-width: 30%;
+        transform: rotate(-90deg);
+    }
+}
+
+@media (max-width: 30em) {
+    .about__img__container .about__knife {
         max-width: 20%;
         transform: rotate(-90deg);
     }
