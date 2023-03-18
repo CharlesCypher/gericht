@@ -1,7 +1,7 @@
 :root {
   --fs-35rem: clamp(18.00rem, calc(12.09rem + 29.57vw), 35.00rem);
-  --fs-5rem: clamp(2.00rem, calc(1.14rem + 4.29vw), 5.00rem);
-  --fs-4rem: clamp(1.50rem, calc(0.79rem + 3.57vw), 4.00rem);
+  --fs-5rem: clamp(3.00rem, calc(2.30rem + 3.48vw), 5.00rem);
+  --fs-4rem: clamp(2.00rem, calc(1.30rem + 3.48vw), 4.00rem);
   --fs-3rem: clamp(1.13rem, calc(0.59rem + 2.68vw), 3.00rem);
   --fs-1-5rem: clamp(1.00rem, calc(0.86rem + 0.71vw), 1.50rem);
   --fs-1-3rem: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.30rem);

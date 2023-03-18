@@ -61,3 +61,10 @@
 .video__btn i {
     font-size: 2.5rem;
 }
+
+@media (max-width: 30em) {
+    .video__container {
+        aspect-ratio: 21 / 11;
+        padding-top: 52.38%;
+    }
+}
