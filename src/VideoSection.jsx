@@ -2,7 +2,7 @@ import React, { useState, useRef } from "react";
 import "./VideoSection.css";
 
 function VideoSection() {
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [isPlaying, setIsPlaying] = useState(true);
   const videoRef = useRef(null);
 
   const togglePlay = () => {
