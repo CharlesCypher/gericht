@@ -70,6 +70,9 @@
     height: 100%;
     opacity: 0;
     background-color: var(--clr-black-900);
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
     z-index: 1;
 }

@@ -36,19 +36,22 @@
 }
 
 .video__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
     width: 120px;
     height: 120px;
     inset: 50% auto auto 50%;
     transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--clr-white);
     border: none;
     border-radius: 50%;
     border: 1px solid var(--clr-primary);
     background-color: transparent;
+    -webkit-transition: opacity .3s ease-in-out;
+    -moz-transition: opacity .3s ease-in-out;
+    -o-transition: opacity .3s ease-in-out;
     transition: opacity .3s ease-in-out;
     cursor: pointer;
     opacity: 0;
