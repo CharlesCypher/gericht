@@ -123,8 +123,7 @@ button {
 }
 
 .padding__global {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
+  padding-inline: 2.5rem;
 }
 
 .btn__primary {
@@ -199,4 +198,10 @@ button {
   inset: auto auto -1rem -1rem;
   background-color: var(--clr-primary);
   z-index: -1;
+}
+
+@media (max-width:30em) {
+  .padding__global {
+    padding-inline: 1.5rem;
+  }
 }
