@@ -3,13 +3,13 @@ import "./AboutSection.css";
 
 function About() {
   return (
-    <section className="about__section">
+    <section className="about__section section">
       <div className="overlay__overlay"></div>
       <div className="padding__global">
         <div className="about__content">
           <div className="about__col__1">
             <h2 className="about__about__intro__text title">About Us</h2>
-            <h4 className="about__about__intro__desc">
+            <h4 className="about__about__intro__desc desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec
               aliquet eu proin mauris et.
             </h4>

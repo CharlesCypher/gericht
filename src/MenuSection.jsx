@@ -44,10 +44,10 @@ function MenuSection() {
   }, []);
 
   return (
-    <section className="menu__section">
+    <section className="menu__section section">
       <div className="padding__global">
         <div className="menu__into__container">
-          <p className="menu__intro__tag">Menu that fits your palatte</p>
+          <p className="menu__intro__tag tag">Menu that fits your palatte</p>
           <h2 className="menu__intro__text title">Today's special</h2>
         </div>
         <div className="menu__content">
@@ -60,7 +60,6 @@ function MenuSection() {
           <div className="menu__col__2">
             <div className="menu__img__container">
               <img src="https://res.cloudinary.com/cyher/image/upload/v1679118463/shaker_k8wzek.png" alt="shaker" className="menu__img" />
-              {/* <img src={waveLine} alt="" className="menu__img__line" /> */}
             </div>
           </div>
           <div className="menu__col__3">

@@ -1,11 +1,5 @@
 .gallery__section {
-    position: relative;
     padding: 6rem 0;
-    background: var(--clr-black-900) url("https://res.cloudinary.com/cyher/image/upload/v1679118225/texture_bg_jwvqca.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow-x: hidden;
-    z-index: 1;
 }
 
 .gallery__content {
@@ -20,15 +14,6 @@
     justify-content: end;
     justify-items: end;
     justify-self: end;
-}
-
-.gallery__intro__tag {
-    position: relative;
-    font-size: var(--fs-1-5rem);
-    color: var(--clr-white);
-    font-family: var(--ff-cormorant);
-    font-weight: var(--fw-700);
-    margin-bottom: 2.5rem;
 }
 
 .gallery__intro__tag::before {
@@ -47,11 +32,6 @@
 
 .gallery__intro__desc {
     width: min(100%, 450px);
-    font-size: var(--fs-1-1rem);
-    font-family: var(--ff-open-sans);
-    font-weight: var(--fw-400);
-    color: var(--clr-grey);
-    margin-bottom: 2rem;
 }
 
 .gallery__gallery {

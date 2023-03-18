@@ -1,6 +1,8 @@
 .menu__section {
     padding-top: 6rem;
     padding-bottom: 6rem;
+    background-image: none;
+    background-color: var(--clr-black-800);
 }
 
 .menu__into__container {
@@ -10,15 +12,7 @@
     justify-content: center;
 }
 
-.menu__intro__tag {
-    position: relative;
-    font-size: var(--fs-1-5rem);
-    font-family: var(--ff-cormorant);
-    font-weight: var(--fw-700);
-    color: var(--clr-white);
-    text-align: center;
-    margin-bottom: 1.5rem;
-}
+/* .menu__intro__tag {} */
 
 .menu__intro__tag::before {
     content: url("../src/assets/spoon_right.svg");
@@ -151,12 +145,6 @@
 }
 
 @media screen and (max-width: 1024px) {
-    /* .menu__content {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        place-items: center;
-    } */
-
     .menu__col__1 {
         width: 100%;
     }

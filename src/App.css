@@ -149,3 +149,28 @@ a {
 .title {
   font-size: var(--fs-4rem);
 }
+
+.section {
+  position: relative;
+  background: var(--clr-black-900) url("https://res.cloudinary.com/cyher/image/upload/v1679118225/texture_bg_jwvqca.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 1;
+}
+
+.tag {
+  position: relative;
+  font-size: var(--fs-1-5rem);
+  color: var(--clr-white);
+  font-family: var(--ff-cormorant);
+  font-weight: var(--fw-700);
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  font-size: var(--fs-1-1rem);
+  font-family: var(--ff-open-sans);
+  font-weight: var(--fw-400);
+  color: var(--clr-grey);
+  margin-bottom: 2rem;
+}

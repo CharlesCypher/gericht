@@ -1,11 +1,5 @@
 .about__section {
-    position: relative;
     padding: 5rem 0;
-    background: var(--clr-black-900) url("https://res.cloudinary.com/cyher/image/upload/v1679118225/texture_bg_jwvqca.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    z-index: 1;
 }
 
 .about__section::before {
@@ -46,11 +40,6 @@
 
 .about__about__intro__desc {
     width: min(100%, 470px);
-    font-size: var(--fs-1-1rem);
-    font-family: var(--ff-open-sans);
-    font-weight: var(--fw-400);
-    color: var(--clr-grey);
-    margin-bottom: 2rem;
     margin-left: auto;
 }
 

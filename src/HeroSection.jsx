@@ -4,7 +4,7 @@ import "./HeroSection.css";
 function HeroSection() {
   return (
     <main>
-      <section className="hero__section">
+      <section className="hero__section section">
         <div className="padding__global">
           <div className="hero__panel__12__col">
             <aside className="hero__col__1">
@@ -18,12 +18,12 @@ function HeroSection() {
               </div>
             </aside>
             <div className="hero__col__2">
-              <p className="hero__intro__tag">Chase the new flavour</p>
+              <p className="hero__intro__tag tag">Chase the new flavour</p>
               <h1 className="hero__intro__text">
                 The key to
                 <br /> Fine dining
               </h1>
-              <h4 className="hero__intro__desc">
+              <h4 className="hero__intro__desc desc">
                 Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam. Et, penatibus aliquam amet tellus
               </h4>
               <button className="hero__intro__btn btn__primary">Explore More</button>

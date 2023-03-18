@@ -4,7 +4,7 @@ import "./ChefSection.css";
 
 function ChefSection() {
   return (
-    <section className="chef__section">
+    <section className="chef__section section">
       <div className="overlay__overlay"></div>
       <div className="padding__global">
         <div className="chef__content">
@@ -15,9 +15,9 @@ function ChefSection() {
           </div>
           <div className="chef__col__2">
             <div className="col__2__content">
-              <p className="chef__intro__tag">Chef's Word</p>
+              <p className="chef__intro__tag tag">Chef's Word</p>
               <h2 className="chef__intro__text title">what we believe in</h2>
-              <p className="chef__intro__desc">
+              <p className="chef__intro__desc desc">
                 <span>
                   <img src={quote} alt="quotation mark" className="quote" />
                 </span>

@@ -12,14 +12,14 @@ function GallerySection() {
       });
   }, []);
   return (
-    <div className="gallery__section">
+    <div className="gallery__section section">
       <div className="overlay__overlay"></div>
       <div className="padding__global">
         <div className="gallery__content">
           <div className="gallery__col__1">
-            <p className="gallery__intro__tag">Instagram</p>
+            <p className="gallery__intro__tag tag">Instagram</p>
             <h2 className="gallery__intro__text title">photo gallery</h2>
-            <h4 className="gallery__intro__desc">
+            <h4 className="gallery__intro__desc desc">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit. Volutpat mattis ipsum turpis elit elit scelerisque egestas mu.
             </h4>
             <button className="gallery__intro__button btn__primary">View More</button>

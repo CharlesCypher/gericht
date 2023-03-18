@@ -8,13 +8,13 @@ import "./AwardSection.css";
 
 function AwardSection() {
   return (
-    <section className="award__section">
+    <section className="award__section section">
       <div className="overlay__overlay"></div>
       <div className="padding__global">
         <img className="brand__logo" src={logo} alt="brand__logo" />
         <div className="award__content">
           <div className="award__col__2">
-            <p className="award__intro__tag">Awards & Recognition</p>
+            <p className="award__intro__tag tag">Awards & Recognition</p>
             <h2 className="award__intro__text title">our laurels</h2>
             <div className="award__trophy__container">
               <div className="award__trophy">
