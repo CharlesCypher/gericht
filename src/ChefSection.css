@@ -19,13 +19,9 @@
 .chef__col__1 .chef__img__container {
     position: relative;
     width: 100%;
-    max-width: calc(29rem - 50px);
+    max-width: clamp(16.00rem, calc(11.13rem + 24.35vw), 30rem);
     height: auto;
 }
-
-/* .chef__col__1 .chef__img__container::before {} */
-
-/* .chef__col__1 .chef__img__container::after {} */
 
 .chef__col__1 .chef__img__container .chef__img {
     height: auto;

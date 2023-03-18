@@ -58,7 +58,7 @@
     font-weight: var(--fw-700);
     color: var(--clr-white-smoke);
     position: absolute;
-    inset: 0 auto auto -5rem;
+    transform: translate(-15%, 25%);
     opacity: .8;
     z-index: 1;
 }
@@ -101,6 +101,12 @@
     .award__content {
         display: grid;
         grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 30em) {
+    .award__col__3 .award__img__container::before {
+        transform: translate(-15%, 40%);
     }
 }
 
