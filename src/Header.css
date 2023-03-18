@@ -11,7 +11,7 @@
 }
 
 .header__logo {
-    font-size: var(--fs-1-5rem);
+    font-size: var(--fs-2rem);
     color: var(--clr-white);
     font-weight: var(--fw-700);
     font-family: var(--ff-cormorant);
@@ -51,6 +51,12 @@
     margin: 5px 0;
     user-select: none;
     background-color: var(--clr-white);
+}
+
+@media (min-width: 64em) {
+    .hamburger {
+        display: none;
+    }
 }
 
 @media (max-width: 64em) {
