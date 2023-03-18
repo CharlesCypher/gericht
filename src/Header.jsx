@@ -2,9 +2,7 @@ import React from "react";
 import "./Header.css";
 
 function Header() {
-  const toggleNavBar = () => {
-
-  };
+  const toggleNavBar = () => {};
 
   return (
     <div className="header__wrapper">
@@ -40,11 +38,11 @@ function Header() {
               </li>
             </ul>
           </nav>
-          <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>
+          {/* <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>
             <div className="bar bar__one"></div>
             <div className="bar bar__one"></div>
             <div className="bar bar__one"></div>
-          </button> 
+          </button>  */}
         </header>
       </div>
     </div>

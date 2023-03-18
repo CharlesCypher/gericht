@@ -19,7 +19,7 @@ function VideoSection() {
     <section className="video__section">
       <div className="video__container">
         <div className="video__overlay"></div>
-        <video ref={videoRef} className="video__video" loop muted>
+        <video ref={videoRef} className="video__video" loop muted autoPlay>
           <source src={vid001} type="video/mp4" />
         </video>
         <button className="video__btn" onClick={togglePlay}>
