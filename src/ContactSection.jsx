@@ -8,6 +8,7 @@ function ContactSection() {
       <div className="padding__global">
         <div className="contact__content">
           <div className="contact__col__1"></div>
+          <div className="contact__col__2"></div>
         </div>
       </div>
     </div>
