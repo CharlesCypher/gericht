@@ -4,7 +4,7 @@
 
 .about__section::before {
     content: "G";
-    font-size: 40rem;
+    font-size: var(--fs-35rem);
     font-family: var(--ff-cormorant);
     color: var(--clr-black-700);
     position: absolute;
@@ -17,7 +17,7 @@
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     place-items: center;
-    gap: 0 3rem;
+    gap: 0rem;
     z-index: -1;
 }
 
@@ -49,8 +49,9 @@
 }
 
 .about__img__container .about__knife {
-    width: 80px;
+    max-width: 40%;
     height: auto;
+    margin: 0 auto;
     object-fit: cover;
 }
 
@@ -74,4 +75,17 @@
 .about__history__intro__desc {
     width: min(100%, 470px);
     margin-right: auto;
+}
+
+@media (max-width: 48em) {
+
+    .about__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .about__img__container .about__knife {
+        max-width: 20%;
+        transform: rotate(-90deg);
+    }
 }

@@ -2,6 +2,12 @@ import React from "react";
 import "./HeroSection.css";
 
 function HeroSection() {
+  const scrollDown = () => {
+    window.scrollTo({
+      top: 870,
+      behavior: "smooth",
+    });
+  };
   return (
     <main>
       <section className="hero__section section">
@@ -45,7 +51,9 @@ function HeroSection() {
               </div>
             </div>
             <aside className="hero__col__4">
-              <button className="hero__scroll__btn">SCROLL</button>
+              <button className="hero__scroll__btn" onClick={scrollDown}>
+                SCROLL
+              </button>
             </aside>
           </div>
         </div>

@@ -38,13 +38,6 @@
     row-gap: 3rem;
 }
 
-@media (max-width:64rem) {
-    .award__trophy__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
-    }
-}
 
 .award__col__3 .award__img__container {
     position: relative;
@@ -93,6 +86,22 @@
     font-size: var(--fs-1rem);
     font-family: var(--ff-open-sans);
     font-weight: var(--fw-400);
+}
+
+@media (max-width:64em) {
+    .award__trophy__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 48em) {
+    .award__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
 
 @keyframes rotate {

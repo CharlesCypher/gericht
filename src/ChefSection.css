@@ -82,14 +82,28 @@
     text-transform: capitalize;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 64em) {
     .chef__content {
         display: grid;
         gap: 0 2rem;
     }
+}
 
-    .chef__col__1,
+@media (max-width: 48em) {
+    .chef__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .chef__col__1 {
+        margin-bottom: 4rem;
+    }
+
     .chef__col__2 {
+        text-align: center;
+    }
+
+    .chef__col__2 .chef__intro__desc {
         width: 100%;
     }
 }

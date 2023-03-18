@@ -53,8 +53,14 @@
     background-color: var(--clr-white);
 }
 
-@media (max-width: 64rem) {
+@media (max-width: 64em) {
     .header__nav__right {
+        display: none;
+    }
+}
+
+@media (max-width: 48em) {
+    .header__nav__left {
         display: none;
     }
 }
