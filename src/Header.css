@@ -53,7 +53,7 @@
     background-color: var(--clr-white);
 }
 
-@media (min-width: 60em) {
+@media (min-width: 48em) {
     .hamburger {
         display: none;
     }
@@ -66,6 +66,10 @@
 }
 
 @media (max-width: 48em) {
+    .header__header {
+        height: 5rem;
+    }
+
     .header__nav__left {
         display: none;
     }
