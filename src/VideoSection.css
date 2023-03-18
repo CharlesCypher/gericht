@@ -1,0 +1,54 @@
+.video__section {
+    position: relative;
+    padding: 0;
+}
+
+.video__container {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 21 / 9;
+    padding-top: 42.86%;
+}
+
+.video__container::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: var(--clr-black-900);
+    opacity: .5;
+    z-index: 1;
+}
+
+.video__container .video__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: auto;
+}
+
+.video__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    inset: 50% auto auto 50%;
+    transform: translate(-50%, -50%);
+    color: var(--clr-white);
+    border: none;
+    border: 1px solid var(--clr-primary);
+    border-radius: 50%;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.video__btn i {
+    font-size: 2.5rem;
+}

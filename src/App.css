@@ -1,0 +1,151 @@
+:root {
+  --fs-35rem: clamp(25.00rem, calc(22.14rem + 14.29vw), 35.00rem);
+  --fs-5rem: clamp(2.00rem, calc(1.14rem + 4.29vw), 5.00rem);
+  --fs-4rem: clamp(1.50rem, calc(0.79rem + 3.57vw), 4.00rem);
+  --fs-3rem: clamp(1.13rem, calc(0.59rem + 2.68vw), 3.00rem);
+  --fs-1-5rem: clamp(1.00rem, calc(0.86rem + 0.71vw), 1.50rem);
+  --fs-1-3rem: clamp(1.00rem, calc(0.91rem + 0.43vw), 1.30rem);
+  --fs-1-1rem: clamp(1.00rem, calc(0.97rem + 0.14vw), 1.10rem);
+  --clr-white: #FFFFFF;
+  --clr-white-smoke: #FAFAFA;
+  --clr-grey: #AAAAAA;
+  --clr-black-900: #040404;
+  --clr-black-800: #0C0B08;
+  --clr-black-700: #272727;
+  --clr-primary: #DCCA87;
+  --clr-primary-800: #cab569;
+  --clr-transparent: transparent;
+  --ff-cormorant: 'Cormorant Upright', serif;
+  --ff-open-sans: 'Open Sans', sans-serif;
+  --ff-bestermind: 'Bestermind', sans-serif;
+  --fw-700: 700;
+  --fw-400: 400;
+}
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+    2. Remove default margin
+  */
+* {
+  margin: 0;
+}
+
+/*
+    3. Allow percentage-based heights in the application
+  */
+html,
+body {
+  height: 100%;
+}
+
+/*
+    Typographic tweaks!
+    4. Add accessible line-height
+    5. Improve text rendering
+  */
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  background-color: var(--clr-black-800);
+  font-size: 1rem;
+}
+
+/*
+    6. Improve media defaults
+  */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/*
+    7. Remove built-in form typography styles
+  */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/*
+    8. Avoid text overflows
+  */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+/*
+    9. Create a root stacking context
+  */
+#root,
+#__next {
+  isolation: isolate;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--clr-white);
+}
+
+/*  */
+.gericht__gericht {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.padding__global {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+}
+
+.btn__primary {
+  padding: .8rem 2rem;
+  font-size: var(--fs-1-1rem);
+  background-color: var(--clr-primary);
+  text-decoration: none;
+  color: var(--clr-black-800);
+  font-family: var(--ff-cormorant);
+  font-weight: var(--fw-700);
+  border: none;
+  cursor: pointer !important;
+}
+
+.btn__primary:hover {
+  background-color: var(--clr-primary-800);
+}
+
+.overlay__overlay {
+  background-color: var(--clr-black-900);
+  position: absolute;
+  inset: 0;
+  opacity: .5;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.title {
+  font-size: var(--fs-4rem);
+}

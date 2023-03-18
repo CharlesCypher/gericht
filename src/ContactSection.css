@@ -1,0 +1,10 @@
+.contact__section {
+    min-height: 100vh;
+    position: relative;
+    padding: 6rem 0;
+    background: var(--clr-black-900) url("../src/assets/texture_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: 1;
+}

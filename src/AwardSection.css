@@ -1,0 +1,117 @@
+.award__section {
+    position: relative;
+    padding: 7rem 0;
+    background: var(--clr-black-900) url("../src/assets/texture_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.award__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+
+.brand__logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 13%;
+    padding: 2rem;
+    animation: rotate 5s linear infinite;
+}
+
+.award__intro__tag {
+    position: relative;
+    font-size: var(--fs-1-5rem);
+    font-family: var(--ff-cormorant);
+    font-weight: var(--fw-700);
+    color: var(--clr-white);
+    margin-bottom: 1.5rem;
+}
+
+.award__intro__tag::before {
+    content: url("../src/assets/spoon_right.svg");
+    position: absolute;
+    inset: auto auto -1.5rem 0;
+}
+
+.award__intro__text {
+    position: relative;
+    font-family: var(--ff-cormorant);
+    color: var(--clr-primary);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.award__trophy__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 2rem;
+    row-gap: 3rem;
+}
+
+@media (max-width:64rem) {
+    .award__trophy__container {
+        display: grid;
+        grid-template-columns: 1fr;
+        row-gap: 2rem;
+    }
+}
+
+.award__col__3 .award__img__container {
+    position: relative;
+    width: 100%;
+    max-width: calc(31.25rem - 20px);
+    height: auto;
+}
+
+.award__col__3 .award__img__container img {
+    height: auto;
+    object-fit: cover;
+}
+
+.award__col__3 .award__img__container::before {
+    content: "G";
+    font-size: var(--fs-35rem);
+    font-family: var(--ff-cormorant);
+    font-weight: var(--fw-700);
+    color: var(--clr-white-smoke);
+    position: absolute;
+    inset: 0 auto auto -5rem;
+    opacity: .8;
+    z-index: 1;
+}
+
+.award__trophy {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.award__trophy .award__details {
+    margin-left: 1.5rem;
+}
+
+.award__trophy .trophy__title {
+    color: var(--clr-primary);
+    font-size: var(--fs-1-5rem);
+    font-family: var(--ff-cormorant);
+    font-weight: var(--fw-700);
+    margin-bottom: .5rem;
+}
+
+.award__trophy .trophy__desc {
+    /* margin-right: auto; */
+    color: var(--clr-grey);
+    font-size: var(--fs-1rem);
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw-400);
+}
+
+@keyframes rotate {
+    100% {
+        transform: rotate(360deg);
+    }
+}

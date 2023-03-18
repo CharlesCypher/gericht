@@ -1,0 +1,127 @@
+.gallery__section {
+    position: relative;
+    padding: 6rem 0;
+    background: var(--clr-black-900) url("../src/assets/texture_bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    z-index: 1;
+}
+
+.gallery__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    gap: 1rem;
+}
+
+.gallery__col__1 {
+    width: 100%;
+    justify-content: end;
+    justify-items: end;
+    justify-self: end;
+}
+
+.gallery__intro__tag {
+    position: relative;
+    font-size: var(--fs-1-5rem);
+    color: var(--clr-white);
+    font-family: var(--ff-cormorant);
+    font-weight: var(--fw-700);
+    margin-bottom: 2.5rem;
+}
+
+.gallery__intro__tag::before {
+    content: url("../src/assets/spoon_right.svg");
+    position: absolute;
+    inset: auto auto -1.5rem 0;
+}
+
+.gallery__intro__text {
+    position: relative;
+    font-family: var(--ff-cormorant);
+    color: var(--clr-primary);
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+}
+
+.gallery__intro__desc {
+    width: min(100%, 450px);
+    font-size: var(--fs-1-1rem);
+    font-family: var(--ff-open-sans);
+    font-weight: var(--fw-400);
+    color: var(--clr-grey);
+    margin-bottom: 2rem;
+}
+
+.gallery__gallery {
+    display: grid;
+    grid-auto-columns: calc(100% - 25vw);
+    grid-auto-flow: column;
+    gap: 1rem;
+    overflow-x: auto;
+    overflow-y: hidden;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+}
+
+@media (max-width: 64em) {
+    .gallery__gallery {
+        display: grid;
+        grid-auto-columns: calc(100% - 15vw);
+    }
+}
+
+.gallery__gallery::-webkit-scrollbar {
+    display: none;
+}
+
+.gallery__img__container {
+    position: relative;
+    max-width: 300px;
+    height: 450px;
+    scroll-snap-align: start;
+}
+
+.gallery__img__container::before {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background-color: var(--clr-black-900);
+    transition: opacity .3s ease-in-out;
+    z-index: 1;
+}
+
+.gallery__img__container:hover::before {
+    opacity: .5;
+}
+
+.gallery__img__container .fa-instagram {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--fs-3rem);
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    z-index: 2;
+}
+
+.gallery__img__container:hover .fa-instagram {
+    opacity: 1;
+}
+
+.gallery__gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery__loading {
+    display: grid;
+    place-items: center;
+    color: var(--clr-primary);
+    font-size: var(--fs-3rem);
+}
