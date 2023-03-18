@@ -21,6 +21,10 @@
     z-index: 1;
 }
 
+.video__container:hover .video__btn {
+    opacity: 1;
+}
+
 .video__container .video__video {
     position: absolute;
     top: 0;
@@ -42,10 +46,12 @@
     transform: translate(-50%, -50%);
     color: var(--clr-white);
     border: none;
-    border: 1px solid var(--clr-primary);
     border-radius: 50%;
+    border: 1px solid var(--clr-primary);
     background-color: transparent;
+    transition: opacity .3s ease-in-out;
     cursor: pointer;
+    opacity: 0;
     z-index: 2;
 }
 
