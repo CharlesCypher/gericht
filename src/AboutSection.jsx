@@ -22,7 +22,7 @@ function About() {
           </div>
           <div className="about__col__3">
             <h2 className="about__history__intro__text title">Our History</h2>
-            <h4 className="about__history__intro__desc">
+            <h4 className="about__history__intro__desc desc">
               Adipiscing tempus ullamcorper lobortis odio tellus arcu volutpat. Risus placerat morbi volutpat habitasse interdum mi aliquam In sed
               odio nec aliquet.
             </h4>

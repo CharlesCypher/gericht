@@ -23,25 +23,9 @@
     height: auto;
 }
 
-.chef__col__1 .chef__img__container::before {
-    content: "";
-    position: absolute;
-    width: calc(20rem - 20px);
-    height: calc(20rem - 20px);
-    inset: -1rem -1rem auto auto;
-    background-color: var(--clr-primary);
-    z-index: -1;
-}
+/* .chef__col__1 .chef__img__container::before {} */
 
-.chef__col__1 .chef__img__container::after {
-    content: "";
-    position: absolute;
-    width: calc(20rem - 20px);
-    height: calc(20rem - 20px);
-    inset: auto auto -1rem -1rem;
-    background-color: var(--clr-primary);
-    z-index: -1;
-}
+/* .chef__col__1 .chef__img__container::after {} */
 
 .chef__col__1 .chef__img__container .chef__img {
     height: auto;

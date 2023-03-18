@@ -174,3 +174,23 @@ a {
   color: var(--clr-grey);
   margin-bottom: 2rem;
 }
+
+.hero::before {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  inset: -1rem -1rem auto auto;
+  background-color: var(--clr-primary);
+  z-index: -1;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  width: 75%;
+  height: 75%;
+  inset: auto auto -1rem -1rem;
+  background-color: var(--clr-primary);
+  z-index: -1;
+}

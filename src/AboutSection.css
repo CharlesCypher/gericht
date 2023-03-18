@@ -73,10 +73,5 @@
 
 .about__history__intro__desc {
     width: min(100%, 470px);
-    font-size: var(--fs-1-1rem);
-    font-family: var(--ff-open-sans);
-    font-weight: var(--fw-400);
-    color: var(--clr-grey);
-    margin-bottom: 2rem;
     margin-right: auto;
 }

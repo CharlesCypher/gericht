@@ -79,25 +79,9 @@
     height: auto;
 }
 
-.hero__col__3 .hero__img__container::before {
-    content: "";
-    position: absolute;
-    width: calc(20rem - 20px);
-    height: calc(20rem - 20px);
-    inset: -1rem -1rem auto auto;
-    background-color: var(--clr-primary);
-    z-index: -1;
-}
+/* .hero__col__3 .hero__img__container::before {} */
 
-.hero__col__3 .hero__img__container::after {
-    content: "";
-    position: absolute;
-    width: calc(20rem - 20px);
-    height: calc(20rem - 20px);
-    inset: auto auto -1rem -1rem;
-    background-color: var(--clr-primary);
-    z-index: -1;
-}
+/* .hero__col__3 .hero__img__container::after {} */
 
 .hero__col__3 .hero__img__container .hero__image {
     height: auto;

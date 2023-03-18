@@ -29,7 +29,7 @@ function HeroSection() {
               <button className="hero__intro__btn btn__primary">Explore More</button>
             </div>
             <div className="hero__col__3">
-              <div className="hero__img__container">
+              <div className="hero__img__container hero">
                 <img
                   src="https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png"
                   alt="image a food"
