@@ -156,6 +156,7 @@
 
     .hero__col__2 .hero__intro__desc {
         width: min(100%, 500px);
+        margin-inline: auto;
         padding: 0;
     }
 }

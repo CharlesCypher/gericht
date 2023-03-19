@@ -58,7 +58,7 @@
     font-weight: var(--fw-700);
     color: var(--clr-white-smoke);
     position: absolute;
-    transform: translate(-15%, 25%);
+    transform: translate(-15%, 6vw);
     opacity: .8;
     z-index: 1;
 }
@@ -106,7 +106,7 @@
 
 @media (max-width: 30em) {
     .award__col__3 .award__img__container::before {
-        transform: translate(-15%, 30%);
+        transform: translate(-15%, 35vw);
     }
 }
 
