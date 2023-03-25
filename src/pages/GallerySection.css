@@ -76,7 +76,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: var(--fs-3rem);
+    /* font-size: var(--fs-3rem); */
+    font-size: 3rem;
     opacity: 0;
     transition: opacity .2s ease-in-out;
     z-index: 2;
@@ -99,7 +100,12 @@
     font-size: var(--fs-3rem);
 }
 
-
+@media (min-width: 130em) {
+    .gallery__gallery {
+        display: grid;
+        grid-auto-columns: calc(100% - 15vw);
+    }
+}
 
 @media (max-width:64em) {
     .gallery__content {
@@ -122,6 +128,10 @@
     .gallery__gallery {
         display: grid;
         grid-auto-columns: calc(60% - 14.3vw);
+    }
+
+    .gallery__img__container .fa-instagram {
+        font-size: 1.5rem;
     }
 }
 

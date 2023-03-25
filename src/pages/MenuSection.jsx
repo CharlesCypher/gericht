@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Beer from "./Beer";
-import waveLine from "../src/assets/curve_line.svg";
+// import waveLine from "../assets/curve_line.svg";
 import Cocktail from "./Cocktail";
 import "./MenuSection.css";
 

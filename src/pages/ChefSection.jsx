@@ -1,5 +1,5 @@
 import React from "react";
-import quote from "../src/assets/quote.svg";
+import quote from "../assets/quote.svg";
 import "./ChefSection.css";
 
 function ChefSection() {

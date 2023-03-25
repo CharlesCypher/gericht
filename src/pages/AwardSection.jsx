@@ -1,9 +1,9 @@
 import React from "react";
-import logo from "../src/assets/awards_logo.png";
-import award002 from "../src/assets/award_002.png";
-import award001 from "../src/assets/award_001.png";
-import award003 from "../src/assets/award_003.png";
-import award005 from "../src/assets/award_005.png";
+import logo from "../assets/awards_logo.png";
+import award002 from "../assets/award_002.png";
+import award001 from "../assets/award_001.png";
+import award003 from "../assets/award_003.png";
+import award005 from "../assets/award_005.png";
 import "./AwardSection.css";
 
 function AwardSection() {
