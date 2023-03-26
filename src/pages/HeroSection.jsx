@@ -10,7 +10,7 @@ function HeroSection() {
   };
   return (
     <main>
-      <section className="hero__section section">
+      <section className="hero__section">
         <div className="padding__global">
           <div className="hero__panel__12__col">
             <aside className="hero__col__1">

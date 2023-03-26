@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Beer from "./Beer";
+import Beer from "../components/Beer";
 // import waveLine from "../assets/curve_line.svg";
-import Cocktail from "./Cocktail";
+import Cocktail from "../components/Cocktail";
 import "./MenuSection.css";
 
 function MenuSection() {
@@ -40,7 +40,7 @@ function MenuSection() {
   }, []);
 
   return (
-    <section className="menu__section section">
+    <section className="menu__section">
       <div className="padding__global">
         <div className="menu__into__container">
           <p className="menu__intro__tag tag">Menu that fits your palatte</p>

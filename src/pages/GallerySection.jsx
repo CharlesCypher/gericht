@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./GallerySection.css";
-import MealsItem from "./MealsItem";
+import MealsItem from "../components/MealsItem";
 
 function GallerySection() {
   const [images, setImages] = useState(null);
