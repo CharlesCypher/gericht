@@ -1,8 +1,10 @@
 .hero__section {
+    position: relative;
     padding-top: 2rem;
     padding-bottom: 6rem;
     background-image: none;
     background-color: var(--clr-black-800);
+    z-index: 1;
 }
 
 .hero__panel__12__col {
