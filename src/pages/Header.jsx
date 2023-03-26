@@ -13,30 +13,29 @@ function Header() {
           <nav className="header__nav header__nav__left" role={"navigation"}>
             <ul className="header__navLinks">
               <li className="header__link">
-                <a href="#">Home</a>
+                <Link to="/home">Home</Link>
               </li>
               <li className="header__link">
-                <a href="#">Pages</a>
+                <Link to="/pages">Pages</Link>
               </li>
               <li className="header__link">
-                <a href="#">Contact Us</a>
+                <Link to="/contact">Contact Us</Link>
               </li>
               <li className="header__link">
-                <a href="#">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
               <li className="header__link">
-                <a href="#">Landing</a>
+                <Link to="/landing">Landing</Link>
               </li>
             </ul>
           </nav>
           <nav className="header__nav header__nav__right">
             <ul className="header__navLinks">
               <li className="header__link">
-                <Link to="/LoginSection">Log In / Registration</Link>
-                {/* <a href="#">Log In / Registration</a> */}
+                <Link to="/login">Log In / Registration</Link>
               </li>
               <li className="header__link">
-                <a href="#">Book Table</a>
+                <Link to="/booktable">Book Table</Link>
               </li>
             </ul>
           </nav>
