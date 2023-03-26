@@ -1,7 +1,7 @@
 import React from "react";
 
 function Beer({ data }) {
-  return data.slice(0, 5).map((item) => {
+  return data.slice(7, 12).map((item) => {
     return (
       <div key={item.idDrink} className="menu__menu__plan">
         <div className="menu__plans">

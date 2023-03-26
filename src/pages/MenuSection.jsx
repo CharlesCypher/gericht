@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 import Beer from "./Beer";
 // import waveLine from "../assets/curve_line.svg";
 import Cocktail from "./Cocktail";
@@ -6,41 +7,36 @@ import "./MenuSection.css";
 
 function MenuSection() {
   const [beer, setBeer] = useState(null);
-  const [loadingBeer, setLoadingBeer] = useState(true);
-  const [errorBeer, setErrorBeer] = useState(null);
-  useEffect(() => {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=beer`)
-      .then((response) => response.json())
-      .then((actualData) => {
-        setBeer(actualData.drinks);
-        setErrorBeer(null);
-      })
-      .catch((err) => {
-        setErrorBeer(err.message);
-        setBeer(null);
-      })
-      .finally(() => {
-        setLoadingBeer(false);
-      });
-  }, []);
-
   const [cocktail, setCocktail] = useState(null);
-  const [loadingCocktail, setLoadingCocktail] = useState(true);
-  const [errorCocktail, setErrorCocktail] = useState(null);
-  useEffect(() => {
-    fetch(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=cocktail`)
-      .then((response) => response.json())
-      .then((actualData) => {
-        setCocktail(actualData.drinks);
-        setErrorCocktail(null);
-      })
-      .catch((err) => {
-        setErrorCocktail(err.message);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  const fetchData = () => {
+    const beerAPI = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=beer";
+    const cocktailAPI = "https://www.thecocktaildb.com/api/json/v1/1/filter.php?c=cocktail";
+    const getBeer = axios.get(beerAPI);
+    const getCocktail = axios.get(cocktailAPI);
+    axios
+      .all([getBeer, getCocktail])
+      .then(
+        axios.spread((...allData) => {
+          const allBeer = allData[0].data.drinks;
+          const allCocktail = allData[1].data.drinks;
+          setBeer(allBeer);
+          setCocktail(allCocktail);
+          setError(null);
+        })
+      )
+      .catch((error) => {
+        setError(error.message);
+        setBeer(null);
         setCocktail(null);
       })
-      .finally(() => {
-        setLoadingCocktail(false);
-      });
+      .finally(() => setLoading(false));
+  };
+
+  useEffect(() => {
+    fetchData();
   }, []);
 
   return (
@@ -53,8 +49,15 @@ function MenuSection() {
         <div className="menu__content">
           <div className="menu__col__1">
             <h3 className="menu__menu__title">wine & beer</h3>
-            {loadingBeer && <div className="menu__loading">A moment please...</div>}
-            {errorBeer && <div className="menu__error">{`There is a problem fetching the menu - ${error}`}</div>}
+            {loading && (
+              <div className="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            )}
+            {error && <div className="menu__error">{`There is a problem fetching the menu - ${error}`}</div>}
             {beer && <Beer data={beer} />}
           </div>
           <div className="menu__col__2">
@@ -64,8 +67,15 @@ function MenuSection() {
           </div>
           <div className="menu__col__3">
             <h3 className="menu__menu__title">cocktails</h3>
-            {loadingCocktail && <div>A moment please...</div>}
-            {errorCocktail && <div>{`There is a problem fetching the menu - ${error}`}</div>}
+            {loading && (
+              <div className="lds-ring">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+              </div>
+            )}
+            {error && <div>{`There is a problem fetching the menu - ${error}`}</div>}
             {cocktail && <Cocktail data={cocktail} />}
           </div>
         </div>
