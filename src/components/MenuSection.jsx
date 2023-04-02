@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import Beer from "../components/Beer";
+import Beer from "../Beer";
 // import waveLine from "../assets/curve_line.svg";
-import Cocktail from "../components/Cocktail";
+import Cocktail from "../Cocktail";
 import "./MenuSection.css";
 
 function MenuSection() {
