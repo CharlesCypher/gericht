@@ -1,35 +1,37 @@
-import React from "react";
-import { createUserWithEmailAndPassword, onAuthStateChanged, signOut } from "firebase/auth";
+import React, { useEffect } from "react";
+import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { useState } from "react";
-// import { useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../utils/firebase-config";
 import Navlogin from "../components/Navlogin";
 // import Header from "../components/Header";
 
 function Signup() {
-  const [isLogged, setIsLogged] = useState(false);
+  // const [isLogged, setIsLogged] = useState(false);
   const [formValues, setFormValues] = useState({
     email: "",
     password: "",
   });
-  // const navigate = useNavigate();
+  const navigate = useNavigate();
   const handleSignIn = async (e) => {
     e.preventDefault();
     try {
       const { email, password } = formValues;
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
+      // setIsLogged(true);
     } catch (error) {
       console.log(error.message);
     }
   };
-  // onAuthStateChanged(firebaseAuth, (currentUser) => {
-  //   if (currentUser) navigate("/");
-  //   setIsLogged(true);
-  // });
+  useEffect(() => {
+    onAuthStateChanged(firebaseAuth, (currentUser) => {
+      if (currentUser) navigate("/");
+    });
+  }, []);
 
   return (
     <div>
-      <Navlogin login={isLogged} />
+      <Navlogin login={"isLogged"} />
       <form>
         <h1 className="form__title">Register</h1>
         <input

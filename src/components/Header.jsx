@@ -40,13 +40,11 @@ function Header() {
                 <Link to={"/login"}>Log In</Link>
               </li>
               <li className="header__link">
-                <Link to={"/login"} onClick={() => signOut(firebaseAuth)}>
-                  Registration
+                <Link to={"/register"} onClick={() => signOut(firebaseAuth)}>
+                  Log Out
                 </Link>
               </li>
-              <li className="header__link">
-                <Link to={"/booktable"}>table</Link>
-              </li>
+              <li className="header__link">table(s)</li>
             </ul>
           </nav>
           <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>
