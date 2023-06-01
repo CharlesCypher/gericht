@@ -1,9 +1,9 @@
 import React from "react";
 import "./AboutSection.css";
 
-function About() {
+function AboutSection({ aboutSection }) {
   return (
-    <section className="about__section section">
+    <section ref={aboutSection} className="about__section section">
       <div className="overlay__overlay"></div>
       <div className="padding__global">
         <div className="about__content">
@@ -34,4 +34,4 @@ function About() {
   );
 }
 
-export default About;
+export default AboutSection;

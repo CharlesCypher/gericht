@@ -23,5 +23,22 @@
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    <script>
+      const images = new Array();
+      function preload() {
+        for (i = 0; i < preload.arguments.length; i++) {
+          images[i] = new Image();
+          images[i].src = preload.arguments[i];
+        }
+      }
+      preload(
+        "https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png",
+        "https://res.cloudinary.com/cyher/image/upload/v1679118664/knife_kj6nuu.png",
+        "https://res.cloudinary.com/cyher/image/upload/v1679118448/award_hero_i2bc4n.png",
+        "https://res.cloudinary.com/cyher/image/upload/v1679118463/shaker_k8wzek.png",
+        "https://res.cloudinary.com/cyher/image/upload/v1679117908/chef_puvrsq.png",
+        "https://res.cloudinary.com/cyher/image/upload/v1679494449/icejar_z1ef8w.png"
+      );
+    </script>
   </body>
 </html>

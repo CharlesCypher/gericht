@@ -11,10 +11,10 @@ function App() {
       <div className="gericht__gericht">
         <Router>
           <Routes>
-            <Route exact path={"/"} element={<Home />} />
-            <Route exact path={"/login"} element={<Login />} />
-            <Route exact path={"/register"} element={<Signup />} />
-            <Route exact path={"*"} element={<div>PAGE NOT FOUND :( 🤖</div>} />
+            <Route path={"/"} element={<Home />} />
+            <Route path={"/login"} element={<Login />} />
+            <Route path={"/register"} element={<Signup />} />
+            <Route path={"*"} element={<div>PAGE NOT FOUND :( 🤖</div>} />
           </Routes>
         </Router>
       </div>

@@ -20,18 +20,18 @@ function Home() {
       if (!currentUser) navigate("/register");
     });
   }, []);
+
   return (
-    <div>
+    <>
       <Header />
       <HeroSection />
-      <AboutSection />
       <MenuSection />
       <ChefSection />
       <VideoSection />
       <AwardSection />
       <GallerySection />
       <ContactSection />
-    </div>
+    </>
   );
 }
 

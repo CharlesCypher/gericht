@@ -1,3 +1,47 @@
+.login {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow-y: hidden;
+}
+
+.login__left {
+    width: 100%;
+    display: flex;
+    flex: 1;
+}
+
+.login__right {
+    width: 100%;
+    display: flex;
+    flex: 2;
+}
+
+.login__left .img__container {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.login__left .img__container img {
+    width: 100%;
+}
+
+.form {
+    /* max-width: 90%; */
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
 .form__title {
     color: var(--clr-white);
+}
+
+.form input[type=email] {
+    width: 100%;
+    display: flex;
 }

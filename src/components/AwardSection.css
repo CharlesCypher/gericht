@@ -14,6 +14,7 @@
     left: 0;
     max-width: 13%;
     padding: 2rem;
+    pointer-events: none;
     animation: rotate 5s linear infinite;
 }
 
@@ -31,9 +32,13 @@
     margin-bottom: 2rem;
 }
 
+.award__col__2 {
+    width: 100%;
+}
+
 .award__trophy__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     column-gap: 2rem;
     row-gap: 3rem;
 }
@@ -90,9 +95,6 @@
 
 @media (max-width:64em) {
     .award__trophy__container {
-        display: grid;
-        grid-template-columns: 1fr;
-        row-gap: 2rem;
         margin-bottom: 4rem;
     }
 }

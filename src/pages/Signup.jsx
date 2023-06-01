@@ -1,24 +1,29 @@
 import React, { useEffect } from "react";
 import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
-import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../utils/firebase-config";
 import Navlogin from "../components/Navlogin";
-// import Header from "../components/Header";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 
 function Signup() {
-  // const [isLogged, setIsLogged] = useState(false);
-  const [formValues, setFormValues] = useState({
-    email: "",
-    password: "",
+  const schema = yup.object().shape({
+    email: yup.string().email().required("Please input your email"),
+    password: yup.string().required("Please input your password"),
+  });
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
   const navigate = useNavigate();
-  const handleSignIn = async (e) => {
-    e.preventDefault();
+  const handleSignIn = async (data) => {
     try {
-      const { email, password } = formValues;
+      const { email, password } = data;
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
-      // setIsLogged(true);
     } catch (error) {
       console.log(error.message);
     }
@@ -32,23 +37,13 @@ function Signup() {
   return (
     <div>
       <Navlogin login={"isLogged"} />
-      <form>
+      <form onSubmit={handleSubmit(handleSignIn)}>
         <h1 className="form__title">Register</h1>
-        <input
-          type="email"
-          name="email"
-          value={formValues.email}
-          placeholder="Email Address"
-          onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })}
-        />
-        <input
-          type="password"
-          name="password"
-          value={formValues.password}
-          placeholder="Password"
-          onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })}
-        />
-        <button onClick={handleSignIn}>Register</button>
+        <input type="email" name="email" placeholder="Email Address" {...register("email")} />
+        <span>{errors.email?.message}</span>
+        <input type="password" name="password" placeholder="Password" {...register("password")} />
+        <span>{errors.password?.message}</span>
+        <button type="submit">Register</button>
       </form>
     </div>
   );

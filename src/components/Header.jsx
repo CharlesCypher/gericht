@@ -1,11 +1,17 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { signOut } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
 import "./Header.css";
 
 function Header() {
+  const navigate = useNavigate();
   const toggleNavBar = () => {};
+
+  const handleSignOut = async () => {
+    await signOut(firebaseAuth);
+    navigate("/login");
+  };
 
   return (
     <div className="header__wrapper">
@@ -17,7 +23,7 @@ function Header() {
           <nav className="header__nav header__nav__left" role={"navigation"}>
             <ul className="header__navLinks">
               <li className="header__link">
-                <Link to={"/home"}>Home</Link>
+                <Link to={"/"}>Home</Link>
               </li>
               <li className="header__link">
                 <Link to={"/pages"}>Pages</Link>
@@ -36,15 +42,15 @@ function Header() {
 
           <nav className="header__nav header__nav__right">
             <ul className="header__navLinks">
-              <li className="header__link">
+              {/* <li className="header__link">
                 <Link to={"/login"}>Log In</Link>
-              </li>
+              </li> */}
               <li className="header__link">
-                <Link to={"/register"} onClick={() => signOut(firebaseAuth)}>
+                <Link to={"/login"} onClick={handleSignOut}>
                   Log Out
                 </Link>
               </li>
-              <li className="header__link">table(s)</li>
+              {/* <li className="header__link">table(s)</li> */}
             </ul>
           </nav>
           <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>

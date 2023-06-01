@@ -57,7 +57,12 @@ function MenuSection() {
                 <div></div>
               </div>
             )}
-            {error && <div className="menu__error">{`There is a problem fetching the menu - ${error}`}</div>}
+            {error && (
+              <div className="menu__error">
+                {`There was a problem fetching the menu - ${error}`}
+                {/* <p onClick={() => fetchData()}>Try again?</p> */}
+              </div>
+            )}
             {beer && <Beer data={beer} />}
           </div>
           <div className="menu__col__2">
@@ -75,7 +80,12 @@ function MenuSection() {
                 <div></div>
               </div>
             )}
-            {error && <div>{`There is a problem fetching the menu - ${error}`}</div>}
+            {error && (
+              <div>
+                {`There was a problem fetching the menu - ${error}`}
+                {/* <p onClick={() => fetchData()}>Try again?</p> */}
+              </div>
+            )}
             {cocktail && <Cocktail data={cocktail} />}
           </div>
         </div>

@@ -3,21 +3,31 @@ import { onAuthStateChanged, signInWithEmailAndPassword } from "firebase/auth";
 import { firebaseAuth } from "../utils/firebase-config";
 import { useNavigate } from "react-router-dom";
 import Navlogin from "../components/Navlogin";
+import * as yup from "yup";
+import { useForm } from "react-hook-form";
+import { yupResolver } from "@hookform/resolvers/yup";
 import "./Login.css";
+import Header from "../components/Header";
 
 function Login() {
-  // const [isLogged, setIsLogged] = useState(false);
-  const [formValues, setFormValues] = useState({
-    email: "",
-    password: "",
+  const schema = yup.object().shape({
+    email: yup.string().email().required("Please input your email"),
+    password: yup.string().required("Please input your password"),
+  });
+
+  const {
+    register,
+    handleSubmit,
+    formState: { errors },
+  } = useForm({
+    resolver: yupResolver(schema),
   });
   const navigate = useNavigate();
-  const handleLogin = async (e) => {
-    e.preventDefault();
+  const handleLogin = async (data) => {
     try {
-      const { email, password } = formValues;
+      const { email, password } = data;
       await signInWithEmailAndPassword(firebaseAuth, email, password);
-      // setIsLogged(true);
+      navigate("/");
     } catch (error) {
       console.log(error.message);
     }
@@ -27,32 +37,32 @@ function Login() {
       if (currentUser) navigate("/");
     });
   }, []);
+
   return (
-    <div>
-      <Navlogin />
-      <form>
-        <h1 className="form__title">Login</h1>
-        <input
-          type="email"
-          name="email"
-          value={formValues.email}
-          placeholder="Email Address"
-          required
-          onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })}
-        />
-        <input
-          type="password"
-          name="password"
-          value={formValues.password}
-          placeholder="Password"
-          required
-          maxLength={20}
-          minLength={6}
-          onChange={(e) => setFormValues({ ...formValues, [e.target.name]: e.target.value })}
-        />
-        <button onClick={handleLogin}>Login</button>
-      </form>
-    </div>
+    <>
+      {/* <Navlogin /> */}
+      <Header />
+      <div className="login">
+        <div className="login__left">
+          <div className="img__container">
+            <img
+              src="https://images.unsplash.com/photo-1684248182033-3777c303f726?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIzfHhqUFI0aGxrQkdBfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
+              alt=""
+            />
+          </div>
+        </div>
+        <div className="login__right">
+          <form className="form" onSubmit={handleSubmit(handleLogin)}>
+            <h1 className="form__title">Login</h1>
+            <input type="email" name="email" placeholder="Email Address" required {...register("email")} />
+            <p>{errors.email?.message}</p>
+            <input type="password" name="password" placeholder="Password" {...register("password")} />
+            <p>{errors.password?.message}</p>
+            <input className="login__btn" type="submit" value="login" />
+          </form>
+        </div>
+      </div>
+    </>
   );
 }
 
