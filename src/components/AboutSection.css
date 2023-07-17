@@ -33,7 +33,7 @@
 }
 
 .about__about__intro__text::before {
-    content: url("../src/assets/spoon_left.svg");
+    content: url("../../src/assets/spoon_left.svg");
     position: absolute;
     inset: auto 0 -1.5rem auto;
 }
@@ -67,7 +67,7 @@
 }
 
 .about__history__intro__text::before {
-    content: url("../src/assets/spoon_right.svg");
+    content: url("../../src/assets/spoon_right.svg");
     position: absolute;
     inset: auto auto -1.5rem 0;
 }

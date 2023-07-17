@@ -14,7 +14,7 @@
 }
 
 .gallery__intro__tag::before {
-    content: url("../src/assets/spoon_right.svg");
+    content: url("../../src/assets/spoon_right.svg");
     position: absolute;
     inset: auto auto -1.5rem 0;
 }
