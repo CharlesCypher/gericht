@@ -45,7 +45,7 @@ function Login() {
           <div className={styles.img__container}>
             <img
               className={styles.img}
-              src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+              src="https://res.cloudinary.com/cyher/image/upload/v1689622673/photo-1506368249639-73a05d6f6488_qggd9v.jpg"
               alt="An image of a restaurant kitchen"
             />
           </div>
