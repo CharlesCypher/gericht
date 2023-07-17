@@ -26,16 +26,16 @@ function Header() {
                 <Link to={"/"}>Home</Link>
               </li>
               <li className="header__link">
-                <Link to={"/pages"}>Pages</Link>
+                <Link to={"/"}>Pages</Link>
               </li>
               <li className="header__link">
-                <Link to={"/contact"}>Contact Us</Link>
+                <Link to={"/"}>Contact Us</Link>
               </li>
               <li className="header__link">
-                <Link to={"/blog"}>Blog</Link>
+                <Link to={"/"}>Blog</Link>
               </li>
               <li className="header__link">
-                <Link to={"/landing"}>Landing</Link>
+                <Link to={"/"}>Landing</Link>
               </li>
             </ul>
           </nav>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { createUserWithEmailAndPassword, onAuthStateChanged } from "firebase/auth";
 import { Link, useNavigate } from "react-router-dom";
 import { firebaseAuth } from "../utils/firebase-config";
@@ -8,9 +8,10 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./form.module.css";
 
 function Signup() {
+  const [err, setErr] = useState(null);
   const schema = yup.object().shape({
     email: yup.string().email().required("Please input your email"),
-    password: yup.string().required("Please input your password"),
+    password: yup.string().min(6).max(12).required("Please input your password"),
   });
   const {
     register,
@@ -24,8 +25,10 @@ function Signup() {
     try {
       const { email, password } = data;
       await createUserWithEmailAndPassword(firebaseAuth, email, password);
+      setErr("");
+      navigate("/");
     } catch (error) {
-      console.log(error.message);
+      setErr(error.message);
     }
   };
   useEffect(() => {
@@ -59,6 +62,7 @@ function Signup() {
               Already have an account?
               <Link to={"/login"}>Login</Link>
             </p>
+            {err && <p className={styles.errors}>{err}</p>}
           </form>
         </div>
       </div>

@@ -4,7 +4,6 @@ import { firebaseAuth } from "../utils/firebase-config";
 import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import HeroSection from "../components/HeroSection";
-import AboutSection from "../components/AboutSection";
 import MenuSection from "../components/MenuSection";
 import ChefSection from "../components/ChefSection";
 import VideoSection from "../components/VideoSection";

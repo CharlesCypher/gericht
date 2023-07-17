@@ -8,6 +8,7 @@ import { yupResolver } from "@hookform/resolvers/yup";
 import styles from "./form.module.css";
 
 function Login() {
+  const [err, setErr] = useState(null);
   const schema = yup.object().shape({
     email: yup.string().email().required("Please input your email"),
     password: yup.string().required("Please input your password"),
@@ -25,9 +26,10 @@ function Login() {
     try {
       const { email, password } = data;
       await signInWithEmailAndPassword(firebaseAuth, email, password);
+      setErr("");
       navigate("/");
     } catch (error) {
-      console.log(error.message);
+      setErr(error.message);
     }
   };
   useEffect(() => {
@@ -43,8 +45,8 @@ function Login() {
           <div className={styles.img__container}>
             <img
               className={styles.img}
-              src="https://images.unsplash.com/photo-1683803168320-ab1162844e89?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDM1fHhqUFI0aGxrQkdBfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=800&q=60"
-              alt=""
+              src="https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+              alt="An image of a restaurant kitchen"
             />
           </div>
           <div className={styles.overlay}></div>
@@ -61,6 +63,7 @@ function Login() {
               Don't have an account?
               <Link to={"/register"}>Register</Link>
             </p>
+            {err && <p className={styles.errors}>{err}</p>}
           </form>
         </div>
       </div>
