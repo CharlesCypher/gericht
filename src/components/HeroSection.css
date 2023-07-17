@@ -81,11 +81,12 @@
 .hero__col__3 .hero__img__container {
     position: relative;
     width: clamp(16.00rem, calc(11.13rem + 24.35vw), 30rem);
-    height: auto;
+    height: 450px;
 }
 
 .hero__col__3 .hero__img__container .hero__image {
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -101,10 +102,6 @@
     border: none;
     background: transparent;
     cursor: pointer;
-}
-
-.hero__col__3 .hero__image__pagination .page:nth-child(1) {
-    color: var(--clr-primary);
 }
 
 .hero__col__4 .hero__scroll__btn {

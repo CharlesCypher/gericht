@@ -1,9 +1,16 @@
-import React, { useEffect, useRef } from "react";
+import React, { useRef, useState } from "react";
 import { Link } from "react-router-dom";
-import "./HeroSection.css";
 import AboutSection from "./AboutSection";
+import "./HeroSection.css";
 
 function HeroSection() {
+  const [currentImg, setCurrentImg] = useState("https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png");
+  const images = [
+    "https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png",
+    "https://images.unsplash.com/photo-1506368249639-73a05d6f6488?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    "https://images.unsplash.com/photo-1551218372-a8789b81b253?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    "https://images.unsplash.com/photo-1561954468-039c5f32644d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+  ];
   const aboutSection = useRef(null);
   const scrollDown = () => {
     window.scrollTo({
@@ -37,19 +44,43 @@ function HeroSection() {
                 <h4 className="hero__intro__desc desc">
                   Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam. Et, penatibus aliquam amet tellus
                 </h4>
-                <Link to={"/pages"}>
+                <Link to={"/"}>
                   <button className="hero__intro__btn btn__primary">Explore More</button>
                 </Link>
               </div>
               <div className="hero__col__3">
                 <div className="hero__img__container hero">
-                  <img src="https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png" alt="image a food" className="hero__image" />
+                  <img src={currentImg} alt="image a food" className="hero__image" />
                 </div>
                 <div className="hero__image__pagination">
-                  <button className="page">01</button>
-                  <button className="page">02</button>
-                  <button className="page">03</button>
-                  <button className="page">04</button>
+                  <button
+                    className="page"
+                    style={images[0] === currentImg ? { color: "#DCCA87" } : { color: "white" }}
+                    onClick={() => setCurrentImg(images[0])}
+                  >
+                    01
+                  </button>
+                  <button
+                    className="page"
+                    style={images[1] === currentImg ? { color: "#DCCA87" } : { color: "white" }}
+                    onClick={() => setCurrentImg(images[1])}
+                  >
+                    02
+                  </button>
+                  <button
+                    className="page"
+                    style={images[2] === currentImg ? { color: "#DCCA87" } : { color: "white" }}
+                    onClick={() => setCurrentImg(images[2])}
+                  >
+                    03
+                  </button>
+                  <button
+                    className="page"
+                    style={images[3] === currentImg ? { color: "#DCCA87" } : { color: "white" }}
+                    onClick={() => setCurrentImg(images[3])}
+                  >
+                    04
+                  </button>
                 </div>
               </div>
               <aside className="hero__col__4">
