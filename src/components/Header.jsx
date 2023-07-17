@@ -7,12 +7,14 @@ import "./Header.css";
 function Header() {
   const navigate = useNavigate();
   const toggleNavBar = () => {};
-
   const handleSignOut = async () => {
-    await signOut(firebaseAuth);
-    navigate("/login");
+    try {
+      await signOut(firebaseAuth);
+      navigate("/login");
+    } catch (error) {
+      throw new error();
+    }
   };
-
   return (
     <div className="header__wrapper">
       <div className="padding__global">
@@ -42,15 +44,11 @@ function Header() {
 
           <nav className="header__nav header__nav__right">
             <ul className="header__navLinks">
-              {/* <li className="header__link">
-                <Link to={"/login"}>Log In</Link>
-              </li> */}
               <li className="header__link">
                 <Link to={"/login"} onClick={handleSignOut}>
                   Log Out
                 </Link>
               </li>
-              {/* <li className="header__link">table(s)</li> */}
             </ul>
           </nav>
           <button className="hamburger" role={"navigation"} onClick={toggleNavBar}>

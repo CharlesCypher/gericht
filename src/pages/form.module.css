@@ -103,7 +103,7 @@
     color: rgb(206, 0, 0);
 }
 
-@media (width < 48rem) {
+@media (max-width: 48rem) {
     .login__left {
         position: absolute;
         z-index: -1;

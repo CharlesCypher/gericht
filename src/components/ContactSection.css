@@ -42,3 +42,12 @@
     height: auto;
     object-fit: cover;
 }
+
+
+@media (max-width: 48rem) {
+    .contact__content {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}

@@ -161,14 +161,22 @@
         margin-inline: auto;
         padding: 0;
     }
-}
 
-@media (max-width: 30em) {
+    .hero__col__3 .hero__img__container {
+        height: 400px;
+    }
+
     .hero__col__3 .hero__image__pagination {
         display: flex;
     }
 
     .hero__col__3 .hero__image__pagination .page {
         margin: 0 auto;
+    }
+}
+
+@media (max-width: 30em) {
+    .hero__col__3 .hero__img__container {
+        height: 320px;
     }
 }

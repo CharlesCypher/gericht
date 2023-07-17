@@ -61,7 +61,7 @@
     }
 }
 
-@media (max-width: 64em) {
+@media (max-width: 48em) {
     .header__nav__right {
         display: none;
     }
