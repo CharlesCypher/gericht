@@ -3,7 +3,7 @@ import { initializeApp } from "firebase/app";
 import { getAuth } from "firebase/auth";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBvrIqPsX_3UrnXAEnn0f_YPhCZ3q03_mQ",
+  apiKey: import.meta.env.VITE_REACT_APP_FB_API_KEY,
   authDomain: "gericht-e0296.firebaseapp.com",
   projectId: "gericht-e0296",
   storageBucket: "gericht-e0296.appspot.com",

@@ -8,8 +8,8 @@ function HeroSection() {
   const images = [
     "https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png",
     "https://res.cloudinary.com/cyher/image/upload/v1689622673/photo-1506368249639-73a05d6f6488_qggd9v.jpg",
-    "https://images.unsplash.com/photo-1551218372-a8789b81b253?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
-    "https://images.unsplash.com/photo-1561954468-039c5f32644d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fHJlc3RhdXJhbnQlMjBraXRjaGVufGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60",
+    "https://res.cloudinary.com/cyher/image/upload/v1689626238/photo-1551218372-a8789b81b253_xdqiwq.jpg",
+    "https://res.cloudinary.com/cyher/image/upload/v1689626287/photo-1561954468-039c5f32644d_resyqg.jpg",
   ];
   const aboutSection = useRef(null);
   const scrollDown = () => {
