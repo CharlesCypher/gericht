@@ -13,7 +13,7 @@
 }
 
 .header__logo {
-    font-size: var(--fs-2rem);
+    font-size: var(--fs-1-3rem);
     color: var(--clr-white);
     font-weight: var(--fw-700);
     font-family: var(--ff-cormorant);

@@ -20,25 +20,27 @@ function Header() {
       <div className="padding__global">
         <header className="header__header">
           <Link to={"/"}>
-            <h3 className="header__logo">Gerícht</h3>
+            <h3 className="header__logo">
+              <span style={{ color: "red" }}>T</span>andy&apos;s Kitchen
+            </h3>
           </Link>
           <nav className="header__nav header__nav__left" role={"navigation"}>
             <ul className="header__navLinks">
               <li className="header__link">
                 <Link to={"/"}>Home</Link>
               </li>
-              <li className="header__link">
+              {/* <li className="header__link">
                 <Link to={"/"}>Pages</Link>
-              </li>
+              </li> */}
               <li className="header__link">
                 <Link to={"/"}>Contact Us</Link>
               </li>
               <li className="header__link">
                 <Link to={"/"}>Blog</Link>
               </li>
-              <li className="header__link">
+              {/* <li className="header__link">
                 <Link to={"/"}>Landing</Link>
-              </li>
+              </li> */}
             </ul>
           </nav>
 

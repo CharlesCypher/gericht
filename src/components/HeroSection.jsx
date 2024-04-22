@@ -6,7 +6,7 @@ import "./HeroSection.css";
 function HeroSection() {
   const [currentImg, setCurrentImg] = useState("https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png");
   const images = [
-    "https://res.cloudinary.com/cyher/image/upload/v1679115727/hero_t6hhwc.png",
+    "https://grandbaby-cakes.com/wp-content/uploads/2023/04/jollof-rice-recipe-23.jpg",
     "https://res.cloudinary.com/cyher/image/upload/v1689622673/photo-1506368249639-73a05d6f6488_qggd9v.jpg",
     "https://res.cloudinary.com/cyher/image/upload/v1689626238/photo-1551218372-a8789b81b253_xdqiwq.jpg",
     "https://res.cloudinary.com/cyher/image/upload/v1689626287/photo-1561954468-039c5f32644d_resyqg.jpg",

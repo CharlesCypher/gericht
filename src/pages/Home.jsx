@@ -14,11 +14,11 @@ import ContactSection from "../components/ContactSection";
 function Home() {
   const navigate = useNavigate();
 
-  useEffect(() => {
-    onAuthStateChanged(firebaseAuth, (currentUser) => {
-      if (!currentUser) navigate("/register");
-    });
-  }, []);
+  // useEffect(() => {
+  //   onAuthStateChanged(firebaseAuth, (currentUser) => {
+  //     if (!currentUser) navigate("/register");
+  //   });
+  // }, []);
 
   return (
     <>
