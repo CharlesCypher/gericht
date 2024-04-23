@@ -42,8 +42,7 @@ function HeroSection() {
                   <br /> Fine dining
                 </h1>
                 <h4 className="hero__intro__desc desc">
-                  In tandy kitchen we believe in building a community through food.from hearty breakfasts to satisfying suppers,our menu is a taste of
-                  home.{" "}
+                  we believe in building a community through food.from hearty breakfasts to satisfying suppers,our menu is a taste of home.
                 </h4>
                 <Link to={"/"}>
                   <button className="hero__intro__btn btn__primary">Explore More</button>

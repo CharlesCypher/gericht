@@ -10,8 +10,8 @@ function AboutSection({ aboutSection }) {
           <div className="about__col__1">
             <h2 className="about__about__intro__text title">About Us</h2>
             <h4 className="about__about__intro__desc desc">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis pharetra adipiscing ultrices vulputate posuere tristique. In sed odio nec
-              aliquet eu proin.
+              In tandy kitchen we believe in building a community through food.from hearty breakfasts to satisfying suppers,our menu is a taste of
+              home.
             </h4>
             <button className="about__about__intro__btn btn__primary">Know More</button>
           </div>
