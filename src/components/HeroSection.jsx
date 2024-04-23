@@ -41,9 +41,7 @@ function HeroSection() {
                   The key to
                   <br /> Fine dining
                 </h1>
-                <h4 className="hero__intro__desc desc">
-                  Sit tellus lobortis sed senectus vivamus molestie. Condimentum volutpat morbi facilisis quam. Et, penatibus aliquam amet tellus
-                </h4>
+                <h4 className="hero__intro__desc desc">In tandy kitchen we believe in building a community through food</h4>
                 <Link to={"/"}>
                   <button className="hero__intro__btn btn__primary">Explore More</button>
                 </Link>

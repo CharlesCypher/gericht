@@ -10,7 +10,7 @@ function ChefSection() {
         <div className="chef__content">
           <div className="chef__col__1">
             <div className="chef__img__container hero">
-              <img src="https://res.cloudinary.com/cyher/image/upload/v1679117908/chef_puvrsq.png" alt="chef" loading="lazy" className="chef__img" />
+              <img src="../assets/tandy.JPG" alt="chef" loading="lazy" className="chef__img" />
             </div>
           </div>
           <div className="chef__col__2">
@@ -23,9 +23,9 @@ function ChefSection() {
                 </span>
                 if you want to become a great chef, you have to work with great chefs. and that's exactly what i did.
               </p>
-              <h4 className="chef__intro__author">Kevin Luo</h4>
+              <h4 className="chef__intro__author">Tandy Dee</h4>
               <h6 className="chef__intro__rank">Chef & Founder</h6>
-              <h3 className="chef__intro__signature">Kevin Luo</h3>
+              <h3 className="chef__intro__signature">Tandy</h3>
             </div>
           </div>
         </div>
