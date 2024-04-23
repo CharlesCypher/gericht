@@ -1,6 +1,6 @@
 import React from "react";
 import quote from "../assets/quote.svg";
-import tandy from "../assets/tandy.JPG";
+import tandy from "../assets/tandy.png";
 import "./ChefSection.css";
 
 function ChefSection() {
