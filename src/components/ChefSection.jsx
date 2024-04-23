@@ -10,7 +10,7 @@ function ChefSection() {
         <div className="chef__content">
           <div className="chef__col__1">
             <div className="chef__img__container hero">
-              <img src="../assets/tandy.JPG" alt="chef" loading="lazy" className="chef__img" />
+              <img src="../../src/assets/tandy.JPG" alt="chef" loading="lazy" className="chef__img" />
             </div>
           </div>
           <div className="chef__col__2">

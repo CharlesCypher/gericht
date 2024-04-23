@@ -24,8 +24,7 @@ function AboutSection({ aboutSection }) {
             <h2 className="about__history__intro__text title">Our History</h2>
             <h4 className="about__history__intro__desc desc">
               {" "}
-              Believe it or not,restaurants did not always exist,it seems chefs and food servics have been around since the beginning of time,but the
-              concept of a restaurant where any paying customer could order from a menu did not come into existence untill the 1700s.
+              Believe it or not,restaurants did not always exist,it seems chefs and food servics have been around since the beginning of time.
             </h4>
             <button className="about__history__intro__btn btn__primary">Know More</button>
           </div>
