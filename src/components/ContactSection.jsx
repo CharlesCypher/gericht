@@ -10,7 +10,8 @@ function ContactSection() {
           <div className="contact__col__1">
             <p className="contact__intro__tag tag">Contact</p>
             <h2 className="contact__intro__text title">Find Us</h2>
-            <h5 className="contact__intro-desc desc">Lane Ends Bungalow, Whatcroft Hall Lane, Rudheath, CW9 7SG</h5>
+            <h5 className="contact__intro-desc desc">PETER UNIVERSITY ACHINA / ONNEH</h5>
+            <h5 className="contact__intro-desc desc">+2348022144606</h5>
           </div>
           <div className="contact__col__2">
             <div className="contact__img__container hero">
