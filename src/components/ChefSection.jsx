@@ -21,8 +21,7 @@ function ChefSection() {
                 <span>
                   <img src={quote} alt="quotation mark" className="quote" />
                 </span>
-                auctor sit iaculis in arcu. Vulputate nulla lobortis mauris eget sit. Nulla scelerisque scelerisque congue ac consequat, aliquam
-                molestie lectus eu. Congue iaculis integer curabitur semper sit nunc.
+                if you want to become a great chef, you have to work with great chefs. and that's exactly what i did.
               </p>
               <h4 className="chef__intro__author">Kevin Luo</h4>
               <h6 className="chef__intro__rank">Chef & Founder</h6>
