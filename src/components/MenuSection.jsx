@@ -48,7 +48,7 @@ function MenuSection() {
         </div>
         <div className="menu__content">
           <div className="menu__col__1">
-            <h3 className="menu__menu__title">wine & beer</h3>
+            <h3 className="menu__menu__title">locals</h3>
             {loading && (
               <div className="lds-ring">
                 <div></div>
@@ -71,7 +71,7 @@ function MenuSection() {
             </div>
           </div>
           <div className="menu__col__3">
-            <h3 className="menu__menu__title">cocktails</h3>
+            <h3 className="menu__menu__title">deserts</h3>
             {loading && (
               <div className="lds-ring">
                 <div></div>
